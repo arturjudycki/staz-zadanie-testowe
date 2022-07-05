@@ -52,7 +52,7 @@ body {
   margin: 0 auto;
 }
 
-/* second section */
+/* next section */
 
 .logo {
   display: flex;
@@ -72,29 +72,29 @@ body {
   justify-content: space-between;
 }
 
-.lyrics .infoLyrics {
+.infoLyrics {
   text-transform: uppercase;
   font-size: 15px;
   padding: 0;
   margin: -5px;
 }
 
-.lyrics .infoLyrics p {
+.infoLyrics p {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
 }
 
-.lyrics .infoLyrics p:nth-of-type(1) {
+.infoLyrics p:nth-of-type(1) {
   letter-spacing: 3.5px;
 }
 
-.lyrics .infoLyrics p:nth-of-type(2) {
+.infoLyrics p:nth-of-type(2) {
   letter-spacing: 1px;
   color: #ff6319;
 }
 
-.lyrics .infoLyrics p span {
+.infoLyrics p span {
   font-weight: 800;
 }
 
@@ -110,7 +110,7 @@ body {
   width: 7%;
 }
 
-/* third section */
+/* next section */
 
 .baner {
   margin: 25px 0;
@@ -147,7 +147,7 @@ body {
   padding: 50px 30px;
 }
 
-/* fourth section */
+/* next section */
 
 .business {
   padding: 40px 30px;
@@ -191,7 +191,7 @@ body {
   margin: 0 40px 30px 40px;
 }
 
-.businessBox h3 + p + p {
+.textReadMore {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
@@ -199,8 +199,307 @@ body {
   margin-bottom: 60px;
 }
 
-.businessBox h3 + p + p > i {
+.textReadMore > i {
   margin-left: 5px;
 }
 
-/* fifth section */
+/* next section */
+
+.aboutGdynia .infoBox {
+  background-color: #1f3049;
+  border-top-right-radius: 120px;
+  color: white;
+  padding: 70px 30px 30px 40px;
+  line-height: 32px;
+}
+
+.aboutGdynia .infoBox h1 {
+  margin-bottom: 20px;
+  line-height: 32px;
+}
+
+.aboutGdynia .infoBox h1 span {
+  display: block;
+  margin: 16px 0;
+}
+
+.aboutGdynia .infoBox button {
+  background-color: #ff5e00;
+  border-radius: 6.25px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  margin: 30px 0 20px 0;
+}
+
+.aboutGdynia .infoBox button i {
+  margin-left: 5px;
+}
+
+.aboutGdynia .infoCheckBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.aboutGdynia .infoCheckBox > div {
+  display: flex;
+}
+
+.aboutGdynia .infoCheckBox .check {
+  background-color: #ff5e00;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.aboutGdynia .infoCheckBox .check + p {
+  margin-left: 10px;
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.aboutGdynia .infoCheckBox .check + p > span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.aboutGdynia .imageGdynia {
+  position: relative;
+  height: 445px;
+  border-bottom-right-radius: 34%;
+}
+
+.aboutGdynia img {
+  position: absolute;
+  top: 0px;
+  left: -320px;
+  height: 445px;
+  border-bottom-right-radius: 120px;
+}
+
+/* next section */
+
+.aboutServices .titleBox {
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.aboutServices .titleBox h1 {
+  font-size: 1.8em;
+}
+
+.aboutServices .titleBox p {
+  margin: 30px 0 0 0;
+  line-height: 32px;
+}
+
+.servicesExampleBox .imgBox {
+  width: 120px;
+  height: 120px;
+  background-color: #f5f8fc;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.servicesExampleBox div:nth-of-type(1) .imgBox {
+  margin-top: 0px;
+}
+
+.servicesExampleBox .imgBox img {
+  margin-top: calc((120px - 50px) / 2);
+}
+
+.servicesExampleBox h3 {
+  margin: 30px 0 30px 40px;
+}
+
+.servicesExampleBox h3 ~ p {
+  line-height: 32px;
+  margin: 0 40px 30px 40px;
+}
+
+/* next section */
+.clients {
+  text-align: center;
+}
+
+.clients h1 {
+  font-size: 1.8em;
+  padding: 30px 0 50px 0;
+}
+
+.clients .colorWrapper{
+    height: 620px;
+    background-color: rgba(255, 94, 0, 0.1);
+    border-radius: 120px 0 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personBox {
+  position: relative;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.09);
+  border-radius: 7px;
+  background-color: #ffffff;
+  width: 340px;
+  margin: 0 auto;
+  padding: 30px 30px 40px 30px;
+}
+
+.personBox .quote {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+}
+
+.personBox > p {
+  line-height: 32px;
+}
+
+.personBox > p:nth-of-type(1) {
+  color: #ff6e1a;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.clients .avatarBox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.clients .avatarBox .personalData {
+  align-self: center;
+  font-size: 12px;
+}
+
+.clients .avatarBox .personalData p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.clients .avatarBox img {
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.clients button {
+    margin: 60px;
+    color: #FF5E00;
+    border: 2px solid #FF5E00;
+    border-radius: 6.25px;
+    padding: 15px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.clients button i{
+    margin-left: 10px;
+}
+
+/* next section */
+
+.partners h1 {
+  color: #5f6f87;
+  background-color: #f5f8fc;
+  text-align: center;
+  padding: 80px 0 30px 0;
+  font-size: 1.8em;
+}
+
+.partners .partnersLogo {
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 60px 0;
+}
+
+/* next section */
+
+footer {
+  position: relative;
+  padding: 30px 0 0 30px;
+  height: 720px;
+  background: linear-gradient(
+      0deg,
+      rgba(24, 43, 73, 0.8),
+      rgba(24, 43, 73, 0.8)
+    ),
+    url("../img/footerImage.jpg") 55% 20%;
+  background-size: 330% auto;
+  color: white;
+}
+
+footer > img {
+  margin: 40px 0 50px 0;
+}
+
+footer .lyrics {
+  padding-bottom: 80px;
+}
+
+footer .infoLyrics p {
+  font-size: 19px;
+}
+
+footer .rightStrap {
+  border-bottom: 15px solid #ff6319;
+  width: 42%;
+  padding: 0;
+}
+
+footer > p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer > p:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+footer .linkedinIcon {
+  margin: 20px 0 50px 0;
+}
+
+footer .partnersFooter p {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 12px;
+}
+
+footer .partnersFooter img {
+  margin-top: 20px;
+}
+
+footer .imageBox {
+  display: flex;
+}
+
+footer .imageBox img:nth-of-type(1) {
+  height: 19px;
+  margin-top: 35px;
+}
+
+footer .infoReference {
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+  display: flex;
+  font-size: 12px;
+}
+
+footer .infoReference p {
+  margin-right: 30px;
+}

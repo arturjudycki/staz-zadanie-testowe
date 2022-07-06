@@ -25,12 +25,21 @@ body {
 
 .custom .eng {
   margin-right: auto;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
-.custom img {
+.custom .eng img {
   margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  margin: auto;
+}
+
+.custom .eng p {
+  line-height: 24px;
+  padding-left: 5px;
 }
 
 .custom .smaller,
@@ -118,6 +127,65 @@ body {
   padding: 15px;
   margin: auto 0 30px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .mainMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom {
+    background-color: #f7f8f7;
+    border-radius: 4px;
+    width: 215px;
+    border-bottom: none;
+    padding: 10px;
+    order: 1;
+  }
+
+  .custom .eng {
+    margin-right: 60px;
+  }
+
+  .logo .burger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu ul li {
+    margin: 20px;
+  }
+
+  .menu ul li:nth-of-type(1) {
+    padding-top: 0;
+  }
+
+  .menu button {
+    width: 150px;
+    border-radius: 6px;
+    margin: 20px 40px;
+  }
+
+  .menu button:hover {
+    background-color: #ff5e00;
+    color: white;
+  }
 }
 
 .lyrics {
@@ -149,7 +217,7 @@ body {
 }
 
 .infoLyrics p span {
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .lyrics .orangeBottom {
@@ -157,11 +225,77 @@ body {
 }
 
 .lyrics .orangeBottom:nth-of-type(1) {
-  width: 45%;
+  width: 50%;
 }
 
 .lyrics .orangeBottom:nth-of-type(3) {
   width: 7%;
+}
+
+@media (min-width: 460px) {
+  .lyrics .orangeBottom:nth-of-type(1) {
+    width: 56%;
+  }
+
+  .lyrics .orangeBottom:nth-of-type(3) {
+    width: 8%;
+  }
+}
+
+@media (min-width: 640px) {
+  .lyrics .orangeBottom:nth-of-type(1) {
+    width: 58%;
+  }
+
+  .lyrics .orangeBottom:nth-of-type(3) {
+    width: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .lyrics {
+    margin-top: 25px;
+  }
+
+  .infoLyrics p {
+    font-size: 16px;
+  }
+
+  .lyrics .orangeBottom {
+    border-bottom: 15px solid #ff6319;
+  }
+
+  .lyrics .orangeBottom:nth-of-type(1) {
+    width: 62%;
+  }
+
+  .lyrics .orangeBottom:nth-of-type(3) {
+    width: 12%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lyrics {
+    margin-top: 30px;
+  }
+
+  .infoLyrics p {
+    font-size: 18px;
+  }
+
+  .lyrics .orangeBottom {
+    border-bottom: 19px solid #ff6319;
+  }
+
+  .lyrics .orangeBottom:nth-of-type(3) {
+    width: 15%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lyrics .orangeBottom:nth-of-type(1) {
+    width: 68%;
+  }
 }
 
 /* next section */
@@ -175,12 +309,16 @@ body {
   background-attachment: fixed;
 }
 
-.baner p {
+.baner p:nth-of-type(1) {
   font-weight: 600;
   color: white;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
   font-size: 40px;
   width: 280px;
+}
+
+.baner p:nth-of-type(2) {
+  display: none;
 }
 
 .baner button {
@@ -189,17 +327,64 @@ body {
   border: none;
   color: white;
   font-size: 18px;
-  padding: 15px;
+  padding: 16px 28px;
   margin-top: 30px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .baner button i {
   font-size: 16px;
+  transition: 0.2s;
 }
 
 .baner .info {
   padding: 50px 30px;
+}
+
+@media (min-width: 1024px) {
+  .baner {
+    position: relative;
+    height: 850px;
+  }
+
+  .baner .info {
+    position: absolute;
+    height: 475px;
+    width: 535px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    margin: 100px;
+  }
+
+  .baner p:nth-of-type(1) {
+    color: black;
+    text-shadow: none;
+    font-size: 36px;
+  }
+
+  .baner p span {
+    color: #ff5e00;
+    display: block;
+    width: 400px;
+  }
+
+  .baner p:nth-of-type(2) {
+    display: block;
+    line-height: 32px;
+    margin: 30px 0 10px 0;
+  }
+
+  .baner button:hover {
+    color: #ff5e00;
+    background-color: transparent;
+    border: 1px solid #ff5e00;
+    /* padding: 16px 28px; */
+  }
+
+  .baner button:hover i {
+    margin-left: 15px;
+  }
 }
 
 /* next section */
@@ -258,6 +443,13 @@ body {
 
 .textReadMore > i {
   margin-left: 5px;
+  transition: 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .textReadMore:hover > i {
+    margin-left: 15px;
+  }
 }
 
 /* next section */
@@ -343,6 +535,9 @@ body {
   border-bottom-right-radius: 120px;
 }
 
+@media (min-width: 1024px) {
+}
+
 /* next section */
 
 .aboutServices .titleBox {
@@ -386,7 +581,74 @@ body {
   margin: 0 40px 30px 40px;
 }
 
+.servicesExampleBox + .helpButton {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .servicesExampleBox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  .servicesExampleBox > div {
+    flex-basis: 330px;
+  }
+
+  .servicesExampleBox div:nth-of-type(1) .imgBox {
+    margin-top: 50px;
+  }
+
+  .servicesExampleBox + .helpButton {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 100px;
+  }
+
+  .servicesExampleBox + .helpButton button {
+    background-color: transparent;
+    border: 2px solid #ff5e00;
+    border-radius: 6.25px;
+    color: #ff5e00;
+    padding: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .servicesExampleBox + .helpButton button:hover {
+    background-color: #ff5e00;
+    color: white;
+  }
+
+  .servicesExampleBox + .helpButton button i {
+    transition: 0.2s;
+    margin-left: 10px;
+  }
+
+  .servicesExampleBox + .helpButton button:hover i {
+    margin-left: 25px;
+  }
+}
+
 /* next section */
+
+@media (min-width: 1024px) {
+  .imageGdyniaGlowna {
+    background-image: url("../img/townGdynia.jpg");
+    height: 425px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+  }
+}
+
+/* next section */
+
 .clients {
   text-align: center;
 }
@@ -458,14 +720,20 @@ body {
   color: #ff5e00;
   border: 2px solid #ff5e00;
   border-radius: 6.25px;
-  padding: 15px;
+  padding: 24px;
+  font-weight: 700;
+  font-size: 16px;
   background-color: transparent;
   font-weight: 600;
   cursor: pointer;
 }
 
 .clients button i {
+  transition: 0.2s;
   margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
 }
 
 /* next section */
@@ -487,6 +755,9 @@ body {
 
 .partners .partnersLogo img {
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
 }
 
 /* next section */
@@ -572,4 +843,7 @@ footer .infoReference {
 footer .infoReference p {
   margin-right: 30px;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
 }

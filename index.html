@@ -38,8 +38,22 @@
       <header>
         <div class="logo">
           <a href="#"><img src="./img/logo.png" alt="Logo" /></a>
-          <div class="burger"><i class="fa-solid fa-bars"></i></div>
+          <div class="burger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="xmark none">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
         </div>
+        <nav class="menu none">
+          <ul>
+            <li class="businessSectors">Business Sectors</li>
+            <li class="whyGdynia">Why Gdynia</li>
+            <li class="ourServices">Our services</li>
+            <li class="testimonials">Testimonials</li>
+          </ul>
+          <button>Contact us</button>
+        </nav>
         <section class="lyrics">
           <div class="orangeBottom"></div>
           <div class="infoLyrics">
@@ -56,9 +70,9 @@
         </div>
       </div>
 
-      <section class="businessBox">
+      <section class="businessBox" id="businessSectors">
         <div class="business">
-          <h1>Business Sectors</h1>
+          <h1 >Business Sectors</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nisi
             ipsum suscipit inventore vitae repudiandae perferendis, perspiciatis
@@ -123,7 +137,7 @@
         </div>
       </section>
 
-      <section class="aboutGdynia">
+      <section class="aboutGdynia" id="whyGdynia">
         <div class="infoBox">
           <h1><span> Why Gdynia is </span>a perfect city to invest in?</h1>
           <p>
@@ -165,7 +179,7 @@
         </div>
       </section>
 
-      <section class="aboutServices">
+      <section class="aboutServices" id="ourServices">
         <div class="titleBox">
           <h1>Our Services</h1>
           <p>
@@ -263,35 +277,35 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section class="clients" id="testimonials">
         <h1>Clients about us</h1>
         <div class="colorWrapper">
-        <div class="personBox">
-          <div class="quote">
-            <img src="./img/quote.png" alt="" />
-            <img src="./img/quote.png" alt="" />
-          </div>
+          <div class="personBox">
+            <div class="quote">
+              <img src="./img/quote.png" alt="" />
+              <img src="./img/quote.png" alt="" />
+            </div>
 
-          <div class="logoBox">
-            <img src="./img/logoPaint.png" alt="" />
-          </div>
+            <div class="logoBox">
+              <img src="./img/logoPaint.png" alt="" />
+            </div>
 
-          <p>I'm really satisfied with the cooperation with this company!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum earum
-            sequi eaque nemo odio debitis hic, quam esse commodi! Dolor quo
-            asperiores id minus? At exercitationem perspiciatis similique porro
-            quibusdam!
-          </p>
+            <p>I'm really satisfied with the cooperation with this company!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              earum sequi eaque nemo odio debitis hic, quam esse commodi! Dolor
+              quo asperiores id minus? At exercitationem perspiciatis similique
+              porro quibusdam!
+            </p>
 
-          <div class="avatarBox">
-            <img src="./img/avatar.png" alt="" />
-            <div class="personalData">
-              <p>Leslie Alexander</p>
-              <p>CEO at Paint, Sweden</p>
+            <div class="avatarBox">
+              <img src="./img/avatar.png" alt="" />
+              <div class="personalData">
+                <p>Leslie Alexander</p>
+                <p>CEO at Paint, Sweden</p>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <button>
           Read more testimonals<i class="fa-solid fa-arrow-right"></i>
@@ -301,14 +315,13 @@
       <section class="partners">
         <h1>Our partners</h1>
         <div class="partnersLogo">
-          <img src="./img/ppntGdynia.png" alt="" /><img
-            src="./img/gdyniaMojeMiasto.png"
-            alt=""
-          /><img src="./img/investLogo.png" alt="" />
+          <img src="./img/ppntGdynia.png" alt="" />
+          <img src="./img/gdyniaMojeMiasto.png" alt="" />
+          <img src="./img/investLogo.png" alt="" />
         </div>
       </section>
       <footer>
-        <img src="./img/logoWhite.png" alt="" />
+        <img src="./img/logoWhite.png" alt="" class="logoGdyniaWhite" />
         <div class="lyrics">
           <div class="infoLyrics">
             <p>Young<span>City</span></p>
@@ -333,6 +346,12 @@
         </div>
       </footer>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./js/script.js"></script>
   </body>

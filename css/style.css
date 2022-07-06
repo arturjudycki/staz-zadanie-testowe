@@ -8,6 +8,12 @@ body {
   font-family: "Metropolis", Arial, sans-serif;
 }
 
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 /* first section */
 
 .custom {
@@ -63,13 +69,61 @@ body {
   margin-right: auto;
 }
 
-.logo .burger i {
+.logo .burger,
+.logo .xmark {
+  cursor: pointer;
+}
+
+.logo .burger i,
+.logo .xmark i {
   font-size: 24px;
+}
+
+.menu {
+  text-align: center;
+  background-color: #f5f8fc;
+  height: 670px;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.none,
+.bar {
+  display: none;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 40px;
+  cursor: pointer;
+}
+
+.menu ul li:nth-of-type(1) {
+  padding-top: 40px;
+}
+
+.menu button {
+  background-color: transparent;
+  font-weight: 700;
+  color: #ff5e00;
+  border: 1px solid #ff5e00;
+  font-size: 16px;
+  width: 335px;
+  padding: 15px;
+  margin: auto 0 30px;
+  cursor: pointer;
 }
 
 .lyrics {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .infoLyrics {
@@ -137,6 +191,7 @@ body {
   font-size: 18px;
   padding: 15px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .baner button i {
@@ -170,6 +225,7 @@ body {
   padding: 20px 24px;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .businessBox img {
@@ -197,6 +253,7 @@ body {
   line-height: 16px;
   color: #ff5e00;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .textReadMore > i {
@@ -231,6 +288,7 @@ body {
   font-size: 16px;
   padding: 15px;
   margin: 30px 0 20px 0;
+  cursor: pointer;
 }
 
 .aboutGdynia .infoBox button i {
@@ -338,13 +396,13 @@ body {
   padding: 30px 0 50px 0;
 }
 
-.clients .colorWrapper{
-    height: 620px;
-    background-color: rgba(255, 94, 0, 0.1);
-    border-radius: 120px 0 0 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.clients .colorWrapper {
+  height: 620px;
+  background-color: rgba(255, 94, 0, 0.1);
+  border-radius: 120px 0 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .personBox {
@@ -396,17 +454,18 @@ body {
 }
 
 .clients button {
-    margin: 60px;
-    color: #FF5E00;
-    border: 2px solid #FF5E00;
-    border-radius: 6.25px;
-    padding: 15px;
-    background-color: transparent;
-    font-weight: 600;
+  margin: 60px;
+  color: #ff5e00;
+  border: 2px solid #ff5e00;
+  border-radius: 6.25px;
+  padding: 15px;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.clients button i{
-    margin-left: 10px;
+.clients button i {
+  margin-left: 10px;
 }
 
 /* next section */
@@ -424,6 +483,10 @@ body {
   display: flex;
   justify-content: center;
   padding: 25px 0 60px 0;
+}
+
+.partners .partnersLogo img {
+  cursor: pointer;
 }
 
 /* next section */
@@ -444,6 +507,10 @@ footer {
 
 footer > img {
   margin: 40px 0 50px 0;
+}
+
+footer .logoGdyniaWhite {
+  cursor: pointer;
 }
 
 footer .lyrics {
@@ -471,6 +538,7 @@ footer > p:nth-of-type(2) {
 
 footer .linkedinIcon {
   margin: 20px 0 50px 0;
+  cursor: pointer;
 }
 
 footer .partnersFooter p {
@@ -481,6 +549,7 @@ footer .partnersFooter p {
 
 footer .partnersFooter img {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 footer .imageBox {
@@ -502,4 +571,5 @@ footer .infoReference {
 
 footer .infoReference p {
   margin-right: 30px;
+  cursor: pointer;
 }

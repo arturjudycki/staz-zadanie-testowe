@@ -1,0 +1,55 @@
+.location {
+  display: flex;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+  &__map {
+    position: relative;
+    width: 720px;
+    height: 900px;
+    background-image: url("../img/contact/map.webp");
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 720px) {
+      width: 375px;
+      height: 455px;
+      background-size: cover;
+      margin: 0 auto;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 245px;
+    left: 240px;
+    @media (max-width: 720px) {
+      width: 50px;
+      height: 92px;
+      top: 120px;
+      left: 120px;
+    }
+  }
+  &__info {
+    padding: 100px 0 0 100px;
+    background-color: #f5f8fc;
+    flex-grow: 1;
+    @media (max-width: 1024px) {
+      text-align: center;
+      padding: 50px 0;
+    }
+  }
+  &__title {
+    color: #182b49;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  &__text {
+    font-size: 19px;
+    margin: 12px 0;
+    &--weight {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

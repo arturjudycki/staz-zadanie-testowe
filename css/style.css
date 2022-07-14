@@ -118,8 +118,9 @@ body {
   padding-top: 40px;
 }
 
-.menu button {
+.menu a {
   background-color: transparent;
+  text-decoration: none;
   font-weight: 700;
   color: #ff5e00;
   border: 1px solid #ff5e00;
@@ -189,13 +190,13 @@ body {
     padding-top: 0;
   }
 
-  .menu button {
+  .menu a {
     width: 150px;
     border-radius: 6px;
     margin: 20px 40px;
   }
 
-  .menu button:hover {
+  .menu a:hover {
     background-color: #ff5e00;
     color: #fff;
   }

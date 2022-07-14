@@ -325,6 +325,8 @@
   position: absolute;
   top: 245px;
   left: 240px;
+  width: 92px;
+  height: 170px;
 }
 @media (max-width: 720px) {
   .location__image {

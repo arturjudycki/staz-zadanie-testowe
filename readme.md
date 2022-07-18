@@ -1,5 +1,5 @@
-Kodowanie graficznego projektu z figmy:
+Kodowanie graficznego projektu z Figmy:
 * Strona główna - HTML, CSS, JS, jQuery,
-* Podstrona - HTML, CSS, JS, SASS, BEM.
+* Podstrona - HTML, CSS, JS, jQuery, SASS, BEM.
 
 Wykorzystana biblioteka - FontAwesome.

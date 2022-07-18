@@ -13,3 +13,27 @@ xMarkSass.addEventListener("click", function () {
   xMarkSass.classList.toggle("header__xmark--display");
   menuSass.classList.toggle("header__navbar--none");
 });
+
+$(window).on("scroll", function () {
+  if (
+    $(window).scrollTop() <
+    $(".banner").offset().top + $(".banner").outerHeight(true)
+  ) {
+    $(".scroll-to-top").removeClass("scroll-to-top--change-display");
+  }
+  if (
+    $(window).scrollTop() >
+    $(".banner").offset().top + $(".banner").outerHeight(true)
+  ) {
+    $(".scroll-to-top").addClass("scroll-to-top--change-display");
+  }
+});
+
+$(".scroll-to-top").on("click", function () {
+  $("body, html").animate(
+    {
+      scrollTop: $(".wrapper").offset().top,
+    },
+    500
+  );
+});

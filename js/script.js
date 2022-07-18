@@ -23,3 +23,27 @@ $(".menu ul li").on("click", function () {
     500
   );
 });
+
+ $(window).on("scroll", function () {
+   if (
+     $(window).scrollTop() <
+     $(".aboutGdynia").offset().top + $(".aboutGdynia").outerHeight(true)
+   ) {
+     $(".scrollToTop").removeClass("changeDisplayBlock");
+   }
+   if (
+     $(window).scrollTop() >
+     $(".aboutGdynia").offset().top + $(".aboutGdynia").outerHeight(true)
+   ) {
+     $(".scrollToTop").addClass("changeDisplayBlock");
+   }
+ });
+
+ $(".scrollToTop").on("click", function () {
+   $("body, html").animate(
+     {
+       scrollTop: $(".wrap").offset().top,
+     },
+     500
+   );
+ });

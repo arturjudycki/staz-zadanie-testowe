@@ -8,6 +8,23 @@
       max-width: 1440px;
       margin: 0 auto;
       overflow: hidden;
+      .scroll-to-top {
+        display: none;
+        position: fixed;
+        font-size: 48px;
+        color: #ff5e00;
+        z-index: 1;
+        right: 45px;
+        bottom: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+          color: #dd5e00;
+        }
+        &--change-display {
+          display: block;
+        }
+      }
     }
   }
 }

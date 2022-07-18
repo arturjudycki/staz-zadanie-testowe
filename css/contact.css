@@ -12,6 +12,24 @@
   margin: 0 auto;
   overflow: hidden;
 }
+* .page .wrapper .scroll-to-top {
+  display: none;
+  position: fixed;
+  font-size: 48px;
+  color: #ff5e00;
+  z-index: 1;
+  right: 45px;
+  bottom: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+* .page .wrapper .scroll-to-top:hover {
+  color: #dd5e00;
+}
+* .page .wrapper .scroll-to-top--change-display {
+  display: block;
+}
 
 .header {
   display: -webkit-box;

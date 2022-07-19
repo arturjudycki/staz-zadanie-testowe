@@ -1,6 +1,6 @@
 Kodowanie graficznego projektu z Figmy:
-* Strona główna - HTML, CSS, JS, jQuery,
-* Podstrona <b>Contact us</b> - HTML, CSS, JS, jQuery, składnia SCSS, BEM.
-* Podstrona <b>Why Gdynia</b> - HTML, CSS, JS, jQuery, składnia SASS, BEM.
+* Strona główna <b>Home Page</b> - HTML, CSS, JS, jQuery,
+* Podstrona <b>Contact us</b> - HTML, CSS, JS, jQuery, SASS (składnia .scss), metodologia BEM,
+* Podstrona <b>Why Gdynia</b> - HTML, CSS, JS, jQuery, SASS (składnia .sass), metodologia BEM.
 
 Wykorzystana biblioteka - FontAwesome.

@@ -1,0 +1,33 @@
+.info-part3
+    &__container
+        display: flex
+        justify-content: space-between
+        max-width: 860px
+        margin: 120px auto 110px auto
+    &__title
+        +title
+        max-width: 355px
+    &__text
+        +text
+        margin-bottom: 15px
+        max-width: 410px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        max-width: 860px
+        margin: 0 auto 110px auto
+        list-style: none
+    &__list-item
+        display: flex
+        align-items: center
+        padding-bottom: 50px
+        &:nth-child(odd)
+            padding-right: 260px
+    &__list-square
+        width: 24px
+        height: 24px
+        background-color: $color
+        border-radius: 7px
+        margin-right: 20px
+    &__list-text
+        font-weight: 700

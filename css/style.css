@@ -14,24 +14,31 @@ body {
   overflow: hidden;
 }
 
-.scrollToTop{
+.scrollToTop {
   display: none;
   position: fixed;
-  font-size: 48px;
+  font-size: 40px;
   color: #ff5e00;
   z-index: 1;
-  right: 45px;
+  right: 15px;
   bottom: 5px;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.scrollToTop:hover{
+.scrollToTop:hover {
   color: #dd5e00;
 }
 
-.changeDisplayBlock{
+.changeDisplayBlock {
   display: block;
+}
+
+@media (min-width: 1024px) {
+  .scrollToTop {
+    font-size: 48px;
+    right: 45px;
+  }
 }
 
 /* first section */
@@ -183,7 +190,7 @@ body {
     display: none;
   }
 
-  .xmark{
+  .xmark {
     display: none;
   }
 
@@ -621,19 +628,21 @@ body {
   margin: 16px 0;
 }
 
-.aboutGdynia .infoBox button {
+.aboutGdynia .infoBox a {
+  display: inline-block;
   background-color: #ff5e00;
   border-radius: 6.25px;
   border: none;
   color: #fff;
   font-size: 16px;
+  text-decoration: none;
   padding: 15px;
   margin: 30px 0 20px 0;
   cursor: pointer;
 }
 
-.aboutGdynia .infoBox button i {
-  margin-left: 5px;
+.aboutGdynia .infoBox a i {
+  margin-left: 15px;
 }
 
 .aboutGdynia .infoCheckBox {
@@ -692,7 +701,7 @@ body {
   .aboutGdynia .infoCheckBox {
     flex-shrink: 0;
     flex-basis: 30%;
-    margin:  100px auto;
+    margin: 100px auto;
   }
 
   .aboutGdynia .imageGdynia {
@@ -701,14 +710,14 @@ body {
     background-size: 160% auto;
   }
 
-  .aboutGdynia .infoBox button:hover {
+  .aboutGdynia .infoBox a:hover {
     color: #ff5e00;
     background-color: transparent;
     border: 1px solid #ff5e00;
   }
 
-  .aboutGdynia .infoBox button:hover i {
-    margin-left: 20px;
+  .aboutGdynia .infoBox a:hover i {
+    margin-left: 25px;
   }
 }
 

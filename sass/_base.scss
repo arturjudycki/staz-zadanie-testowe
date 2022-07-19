@@ -18,6 +18,10 @@
         bottom: 5px;
         cursor: pointer;
         transition: 0.2s;
+        @media (max-width: 1024px) {
+          font-size: 40px;
+          right: 15px;
+        }
         &:hover {
           color: #dd5e00;
         }

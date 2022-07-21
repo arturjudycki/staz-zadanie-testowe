@@ -9,19 +9,19 @@
       margin: 0 auto
       overflow: hidden
       .scroll-to-top
-        display: none
         position: fixed
         font-size: 48px
-        color: #ff5e00
+        color: transparent
         z-index: 1
         right: 45px
-        bottom: 5px
+        bottom: -60px
         cursor: pointer
-        transition: 0.2s
-        @media (max-width: 1024px)
+        transition: 0.8s
+        +mq (large)
           font-size: 40px
           right: 15px
         &:hover
           color: #dd5e00
         &--change-display
-          display: block
+          bottom: 5px
+          color: #ff5e00

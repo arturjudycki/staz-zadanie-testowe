@@ -37,3 +37,33 @@ $(".scroll-to-top").on("click", function () {
     500
   );
 });
+
+const imgSass = document.querySelector(".info-part1__image");
+const captionSass = document.querySelector(".info-part1__caption");
+const captionInsideSass = document.querySelector(".info-part1__caption-inside");
+
+imgSass.addEventListener("mouseover", function () {
+  captionSass.classList.add("info-part1__caption--disappear");
+  captionInsideSass.classList.add("info-part1__caption-inside--appear");
+});
+
+imgSass.addEventListener("mouseout", function () {
+  captionSass.classList.remove("info-part1__caption--disappear");
+  captionInsideSass.classList.remove("info-part1__caption-inside--appear");
+});
+
+const imgSass2 = document.querySelector(".info-part2__image");
+const captionSass2 = document.querySelector(".info-part2__caption");
+const captionInsideSass2 = document.querySelector(
+  ".info-part2__caption-inside"
+);
+
+imgSass2.addEventListener("mouseover", function () {
+  captionSass2.classList.add("info-part2__caption--disappear");
+  captionInsideSass2.classList.add("info-part2__caption-inside--appear");
+});
+
+imgSass2.addEventListener("mouseout", function () {
+  captionSass2.classList.remove("info-part2__caption--disappear");
+  captionInsideSass2.classList.remove("info-part2__caption-inside--appear");
+});

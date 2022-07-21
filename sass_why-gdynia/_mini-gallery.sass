@@ -1,0 +1,36 @@
+.mini-gallery
+    display: flex
+    justify-content: center
+    +mq (xlarge)
+        flex-direction: column
+        max-width: 955px
+        margin: 0 auto
+    &__image
+        flex-shrink: 0
+        align-self: baseline
+        width: 474px
+        height: 416px
+        margin: 0 4px
+        transition: 0.6s
+        cursor: pointer
+        +mq (xsmall)
+            width: 237px
+            height: 208px
+            margin: 0 auto
+        &:hover
+            width: 538px
+            height: 549px
+            +mq (xsmall)
+                width: 337px
+                height: 308px
+        &--ship
+            background: url("../img/footerImage.jpg") 40% 30%
+            background-size: cover
+        &--port
+            background: url("../img/shipGdynia.jpg") 50% 30%
+            background-size: cover
+            +mq (xlarge)
+                align-self: flex-end
+            +mq (xsmall)
+                align-self: center
+                margin: 5px

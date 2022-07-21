@@ -3,15 +3,27 @@
         height: 400px
         width: 100%
         background: url("../img/greenery.webp") fixed
+        +mq (medium)
+            height: 200px
     &__container
         display: flex
         justify-content: space-between
         max-width: 1010px
         margin: 130px auto
+        +mq (large)
+            padding: 20px
+        +mq (medium)
+            flex-direction: column
+            align-items: center
     &__title
         +title
         max-width: 495px
+        +mq (medium)
+            max-width: 430px
+            padding-bottom: 30px
     &__text
         +text
         margin-bottom: 15px
         max-width: 430px
+        +mq (medium)
+            max-width: 430px

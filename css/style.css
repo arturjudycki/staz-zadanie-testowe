@@ -15,15 +15,14 @@ body {
 }
 
 .scrollToTop {
-  display: none;
   position: fixed;
   font-size: 40px;
-  color: #ff5e00;
+  color: transparent;
   z-index: 1;
   right: 15px;
-  bottom: 5px;
+  bottom: -60px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.8s;
 }
 
 .scrollToTop:hover {
@@ -31,7 +30,8 @@ body {
 }
 
 .changeDisplayBlock {
-  display: block;
+  bottom: 5px;
+  color: #ff5e00;
 }
 
 @media (min-width: 1024px) {

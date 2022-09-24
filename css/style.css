@@ -344,10 +344,11 @@ body {
 .baner {
   margin: 25px 0;
   height: 585px;
-  background-image: url("../img/mainPhoto.jpg");
+  background-image: url("../img/slider/mainPhoto.webp");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+  animation: photos 5s linear infinite;
 }
 
 .baner p:nth-of-type(1) {
@@ -385,6 +386,31 @@ body {
 
 .baner .info ~ i {
   display: none;
+}
+
+.baner .dotNav {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.baner .dotNav > * {
+  width: 25px;
+  height: 25px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #ff5e00;
+  cursor: pointer;
+}
+
+.baner .dotNav > .activeDot {
+  /* width: 15px;
+  height: 15px;
+  margin: 0 6px;
+  border-radius: 50%; */
+  background-color: #d3ad97;
 }
 
 @media (min-width: 1024px) {
@@ -433,8 +459,8 @@ body {
   .baner .info ~ i {
     display: block;
     position: absolute;
-    color: #ff5e00;
     font-size: 48px;
+    color: #ff5e00;
     cursor: pointer;
   }
 
@@ -1211,5 +1237,31 @@ footer .infoReference p {
   footer .imageBox img:nth-of-type(3) {
     width: 70px;
     height: 72px;
+  }
+}
+
+@keyframes photos {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

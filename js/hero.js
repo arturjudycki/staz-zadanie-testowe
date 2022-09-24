@@ -3,10 +3,10 @@ const tableOfImages = [
   //   "../img/slider/mainPhoto2.webp",
   //   "../img/slider/mainPhoto3.webp",
   //   "../img/slider/mainPhoto4.webp",
-  `url("../img/slider/mainPhoto.webp")`,
-  `url("../img/slider/mainPhoto2.webp")`,
-  `url("../img/slider/mainPhoto3.webp")`,
-  `url("../img/slider/mainPhoto4.webp")`,
+  `url("./img/slider/mainPhoto.webp")`,
+  `url("./img/slider/mainPhoto2.webp")`,
+  `url("./img/slider/mainPhoto3.webp")`,
+  `url("./img/slider/mainPhoto4.webp")`,
 ];
 
 const tableOfTexts = [

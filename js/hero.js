@@ -1,8 +1,12 @@
 const tableOfImages = [
-  "../img/slider/mainPhoto.webp",
-  "../img/slider/mainPhoto2.webp",
-  "../img/slider/mainPhoto3.webp",
-  "../img/slider/mainPhoto4.webp",
+  //   "../img/slider/mainPhoto.webp",
+  //   "../img/slider/mainPhoto2.webp",
+  //   "../img/slider/mainPhoto3.webp",
+  //   "../img/slider/mainPhoto4.webp",
+  `url("../img/slider/mainPhoto.webp")`,
+  `url("../img/slider/mainPhoto2.webp")`,
+  `url("../img/slider/mainPhoto3.webp")`,
+  `url("../img/slider/mainPhoto4.webp")`,
 ];
 
 const tableOfTexts = [
@@ -42,8 +46,12 @@ const showSlide = () => {
   dots.forEach((dot) => dot.classList.remove("activeDot"));
   dots[index].classList.add("activeDot");
 
-  banerPhoto.style.backgroundImage = "url(" + tableOfImages[index] + ")";
+  //   banerPhoto.style.backgroundImage = "url(" + tableOfImages[index] + ")";
+  banerPhoto.style.backgroundImage = tableOfImages[index];
+
   banerText.textContent = tableOfTexts[index];
 };
 
 setInterval(showSlide, 5000);
+
+

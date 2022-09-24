@@ -342,6 +342,7 @@ body {
 /* next section */
 
 .baner {
+  position: relative;
   margin: 25px 0;
   height: 585px;
   background-image: url("../img/slider/mainPhoto.webp");
@@ -472,6 +473,10 @@ body {
   .baner i:nth-of-type(2) {
     top: calc(850px / 2 - 24px);
     right: 20px;
+  }
+
+  .baner .dotNav {
+    bottom: 100px;
   }
 }
 
@@ -883,6 +888,11 @@ body {
   display: none;
 }
 
+.personBoxes {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
 .personBox {
   position: relative;
   box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.09);
@@ -890,6 +900,7 @@ body {
   background-color: #ffffff;
   width: 340px;
   margin: 0 auto;
+  margin-right: 100px;
   padding: 30px 30px 40px 30px;
 }
 
@@ -971,8 +982,9 @@ body {
     display: none;
   }
 
-  .clients .personBox {
-    left: -40%;
+  .personBox {
+    /* left: -65px; */
+    /* margin-right: 50px; */
   }
 
   .personBox .quote {

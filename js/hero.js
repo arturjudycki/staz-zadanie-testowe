@@ -123,3 +123,14 @@ dots.forEach((dot, indexDot) =>
     indexInterval = setInterval(showSlide, 5000);
   })
 );
+
+const angleL = document.querySelector(".angleL");
+const angleR = document.querySelector(".angleR");
+const persons = [...document.querySelectorAll(".personBox")];
+
+angleR.addEventListener("click", function () {
+  console.log("szakalaka");
+  let value = -600;
+  persons.forEach((elem) => (elem.style.left = value + "px"));
+  value -= 200;
+});
